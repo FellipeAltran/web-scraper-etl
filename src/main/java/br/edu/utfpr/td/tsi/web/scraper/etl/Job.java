@@ -40,7 +40,7 @@ public class Job<T, O> {
 		this.logger.info("Transformação de " + lista.getFirst().getClass().getSimpleName() + " finalizado");
 
 
-		this.logger.info("Iniciando gravação de dados de " + lista.getClass().getSimpleName());
+		this.logger.info("Iniciando gravação de dados de " + lista.getFirst().getClass().getSimpleName());
 
 		carregador.carregar(lista);
 		
